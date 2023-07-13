@@ -1,0 +1,18 @@
+1)CREATE DATABASE instagram
+2)CREATE TABLE signup(id int PRIMARY KEY AUTO_INCREMENT,firstname varchar(255))
+
+
+Task 1:
+Click
+Database:My_Company
+Table:Employee_Details
+
+Task 2:
+Query 
+Database -> Lenovo
+Table -> laptop_details
+columns -> p_id,p_name,p_price,p_features,p_discount
+
+
+
+
