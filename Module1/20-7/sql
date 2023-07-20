@@ -1,0 +1,57 @@
+DQL->Data query language->Select
+
+Select all:
+Select * from tablename;
+
+select Row wise
+Select * from tablename where id='?';
+
+Select Col wise
+select colname from tablename
+
+Select Order Wise
+select * from tablename order by(colname) ASC
+
+Agreegate Functions:
+
+1) MAX: Select MAX(h_price) from tablename;
+2) MIN: Select MIN(h_price) from tablename;
+3) SUM: Select SUM(h_price) from tablename;
+4) AVG: Select AVG(h_price) from tablename;
+5) COUNT: Select COUNT(h_price) from tablename;
+
+Scalar Functions:
+1) UCASE : SELECT UCASE(h_name) FROM products
+2) LCASE : SELECT LCASE(h_name) FROM products
+3) MID: SELECT MID(h_name,1,4) FROM products
+===============================
+DCL:Data Control Language
+
+rollback
+commit
+=================================
+JOINS:
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL JOIN
+
+
+Constraint Keys:
+1)Primary ->data duplication avoid
+->we can assign only one time in one table
+->Can't access or assign null value
+
+2)Unique  ->data uniquely identify 
+->we can assign multiple time in one table
+->You can assign null value at once in a table
+
+3)Foreign ->Refrence Pass on[Join]-Index
+
+INNER JOIN : SELECT * FROM location INNER JOIN products on location.id = products.id
+LEFT JOIN : SELECT * FROM location LEFT JOIN products on location.id = products.id
+RIGHT JOIN : SELECT * FROM location RIGHT JOIN products on location.id = products.id
+FULL JOIN : SELECT * FROM location FULL JOIN products on location.id = products.id 
+
+
+
